@@ -45,7 +45,6 @@ let data = [];
 
 export async function fetchTransactionData() {
   data = await getData();
-  console.log(data);
 }
 
 fetchTransactionData();
