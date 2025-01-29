@@ -4,12 +4,11 @@ import React, { useContext } from "react";
 import { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from '@tabler/icons-react';
 import { createContext } from "react";
-
-const SideBarContext = createContext()
+import { SideBarContext } from "@/components/SidebarContext";
 
 export default function Sidebar({ children }) {
-  const [expanded, setExpanded] = useState(true);
-  const [active, setActive] = useState(0);
+  const { expanded, setExpanded } = useContext(SideBarContext);
+
   return (
     <div className="flex h-screen">
       <aside className="flex-shrink-0">
@@ -23,7 +22,6 @@ export default function Sidebar({ children }) {
             </button>
           </div>
 
-          <SideBarContext.Provider value = {{expanded, active, setActive}}>
           <ul className = "flex flex-col ml-2 mr-2">
           {React.Children.toArray(children).slice(0, 4)}
           </ul>
@@ -40,8 +38,6 @@ export default function Sidebar({ children }) {
               <span className="text-sm text-gray-600">wsegaston@gmail.com</span>
             </div>
           </div>
-
-          </SideBarContext.Provider>
 
           <div></div>
         </nav>

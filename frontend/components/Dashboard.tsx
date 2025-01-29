@@ -4,7 +4,7 @@ import { BarChart, PieChart, Gauge, gaugeClasses } from "@mui/x-charts";
 
 export default function Dashboard({  }) {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row w-screen h-screen">
       <div className = "flex flex-col w-2/5 bg-white">
         <div className="flex flex-row h-1/5 outline outline-green-500 m-3 rounded-lg overflow-scroll">
           <div className="flex flex-col">
