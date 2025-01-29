@@ -1,0 +1,21 @@
+{
+  "transactions": [
+    {
+      "product": "dsf",
+      "company": "dsf",
+      "category": "Entertainment",
+      "date": "2025-02-05",
+      "amount": "13",
+      "type": "Income"
+    },
+    {
+      "product": "Stickers",
+      "company": "Temu",
+      "category": "Lifestyle",
+      "date": "2025-01-20",
+      "amount": "2",
+      "type": "Expense"
+    }
+  ],
+  "transactionTotal": 3
+}
